@@ -1,0 +1,74 @@
+body{
+    background-color:black;
+}
+
+#container{
+    background-color: #202020;
+    color: #E8E8E8;
+    height: 90vh;
+    width: 94vw;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 3%;
+}
+
+h1{
+    text-align: center;
+    margin: 0px;
+    padding: 8px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: -webkit-linear-gradient(rgba(238,174,202,1) 34%, rgba(148,187,233,1) 84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 8px;
+}
+
+li{
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+.inputSpan{
+    padding: 5px;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: black;
+    border:2px solid black; 
+    color: #E8E8E8;
+margin: 10px 10px;
+}
+
+.button:hover{
+    color: black;
+    background-color: #E8E8E8;
+    font-style: bold;
+box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3 , 0 0 80px #2196f3;
+	transition-delay: 0.2s;
+}
+
+#bars{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.barItem{
+    background: cornsilk;
+    /* background-color:cornflowerblue; */
+    display: flex-box;
+    margin: 1px;
+    width: 0.62rem;
+}
