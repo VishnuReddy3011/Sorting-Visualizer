@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <link rel="icon" href="Images/symbol2.jpg" type="image/icon">
+    <title> Sorting Visualizer </title>
+    <link rel = "stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+        <div id = "container">
+            <h1> Sorting Visualizer</h1>
+            <ul>
+                <li><button class="button" id="newArray">Generate New Array</button></li>
+                <li><span class="inputSpan"> Speed <input id ="speed_input" type="range" min="20" max ="320" step ="10" value="170"> </span></li>
+                <li><span class="inputSpan">Size <input id="size_input" type="range" min="10" max = "110" step= "10" value = "55"></span></li>
+                <li><button id = "bubbleSort" class="button">Bubble Sort</button></li>
+                <li><button id = "mergeSort" class="button">Merge Sort</button></li>
+                <li><button id = "quickSort" class="button">Quick Sort</button></li>
+            </ul>
+
+            <div id="bars" class="bar"></div>
+
+        </div>
+
+        <script src="JS/sorting.js"></script>
+        <script src="JS/bubbleSort.js"></script>
+        <script src="JS/mergeSort.js"></script>
+        <script src="JS/quickSort.js"></script>
+    </body>
+
+</html>
