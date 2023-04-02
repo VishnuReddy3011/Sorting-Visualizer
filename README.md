@@ -5,4 +5,4 @@ You can use the website to visualize the following sorting algorthims:
 2. Merge Sort
 3. Quick Sort
 
-You can find the website [here](www.youtube.com)
+You can find the website [here](https://vishnureddy3011.github.io/Sorting-Visualizer/)
