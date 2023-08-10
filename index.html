@@ -1,32 +1,36 @@
-
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
-    <link rel="icon" href="Images/symbol2.jpg" type="image/icon">
-    <title> Sorting Visualizer </title>
-    <link rel = "stylesheet" href="CSS/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/style.css"/>
     </head>
-
     <body>
-        <div id = "container">
-            <h1> Sorting Visualizer</h1>
+        <div class="container">
+            <h1>Sorting Visualizer</h1>
             <ul>
-                <li><button class="button" id="newArray">Generate New Array</button></li>
-                <li><span class="inputSpan"> Speed <input id ="speed_input" type="range" min="20" max ="320" step ="10" value="170"> </span></li>
-                <li><span class="inputSpan">Size <input id="size_input" type="range" min="10" max = "110" step= "10" value = "55"></span></li>
-                <li><button id = "bubbleSort" class="button">Bubble Sort</button></li>
-                <li><button id = "mergeSort" class="button">Merge Sort</button></li>
-                <li><button id = "quickSort" class="button">Quick Sort</button></li>
+                <li><button class="button" id="newArray">Generate new Array</button></li>
+                <li><span class="inputSpan"><div class="text">Speed <span class="value" id="show1">170</span> </div><input type="range" id="speed_input" min="20" max="320" step="10" value="170"></span></li>
+                <li><span class="inputSpan"><div class="text">Size <span class="value" id="show2">55</span> </div><input type="range" id="size_input" min="10" max="110" step="10" value="55"></span></li>
+                <li><button class="button" id="bubbleSort">Bubble Sort</button></li>
+                <li><button class="button" id="mergeSort">Merge Sort</button></li>
+                <li><button class="button" id="quickSort">Quick Sort</button></li>
+                <li><button class="button" id="heapSort">Heap Sort</button></li>
             </ul>
-
             <div id="bars" class="bar"></div>
-
-        </div>
-
-        <script src="JS/sorting.js"></script>
+            <div id="timer">
+                <span>Time taken:</span> 
+                <span id="min">00</span> :
+                <span id="sec">00</span> :
+                <span id="ms">00</span>
+            </div>
+        </div> 
+        <script src="JS/script.js"></script>
+        <script src="JS/sort.js"></script>
         <script src="JS/bubbleSort.js"></script>
         <script src="JS/mergeSort.js"></script>
         <script src="JS/quickSort.js"></script>
+        <script src="JS/heapSort.js"></script>
     </body>
-
 </html>
