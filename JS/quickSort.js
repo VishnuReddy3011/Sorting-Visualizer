@@ -29,7 +29,6 @@ async function quickSort(arr , l , r){
         arr[k].style.background = "cornsilk";
     }
 
-    console.log(j);
     await quickSort(arr , l , j-1);
     await quickSort(arr , j+1, r);
 }
@@ -39,6 +38,8 @@ quickSortButton.addEventListener("click" , async function(){
     let arr = document.querySelectorAll(".barItem");
     let len = arr.length-1;
     ButtonsOff();
+    startTimer();
     await quickSort(arr, 0 , len);
+    stopTimer();
     ButtonsOn();
 });
