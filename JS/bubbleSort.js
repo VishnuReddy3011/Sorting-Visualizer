@@ -1,13 +1,11 @@
-async function bubbleSort(){
+const bubbleSort = async ()=>{
     let arr = document.querySelectorAll(".barItem");
-    
     let len = arr.length;
 
-    for(let i = 0; i < len; i++){
-        for(let j = 0; j < len-i-1; j++){
+    for(let i=0; i<len; i++){
+        for(let j=0; j<len-i-1; j++){
             arr[j].style.background = "lightseagreen";
             arr[j+1].style.background = "lightseagreen";
-            console.log("inside");  
 
             if(parseInt(arr[j].style.height) > parseInt(arr[j+1].style.height)){
                 await wait(delay/4);
@@ -26,8 +24,9 @@ async function bubbleSort(){
 
 const bubbleSortButton = document.querySelector("#bubbleSort");
 bubbleSortButton.addEventListener("click" , async function(){
-    console.log("inside bubblesort button");
     ButtonsOff();
+    startTimer();
     await bubbleSort();
+    stopTimer();
     ButtonsOn();
 });
