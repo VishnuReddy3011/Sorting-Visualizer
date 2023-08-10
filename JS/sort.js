@@ -1,6 +1,6 @@
 const swap = (a,b) => [a.style.height, b.style.height] = [b.style.height, a.style.height];
 
-const buttonIds = ["#newArray","#size_input","#bubbleSort","#mergeSort","#quickSort"];
+const buttonIds = ["#newArray","#size_input","#bubbleSort","#mergeSort","#quickSort","#heapSort"];
 
 const ButtonsOn = () =>{
     buttonIds.forEach((button)=>{document.querySelector(button).disabled = false;})
