@@ -1,11 +1,11 @@
 body{
-    background-color:black;
+    background-color: black;
 }
 
-#container{
+.container{
     background-color: #202020;
     color: #E8E8E8;
-    height: 90vh;
+    height: 94vh;
     width: 94vw;
     margin: auto;
     margin-top: 5vh;
@@ -18,7 +18,7 @@ h1{
     padding: 8px;
     font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: -webkit-linear-gradient(rgba(238,174,202,1) 34%, rgba(148,187,233,1) 84%);
+    background: linear-gradient(rgba(238,174,202,1) 34%, rgba(148,187,233,1) 84%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -40,6 +40,15 @@ li{
     display: flex;
     flex-direction: column;
 }
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+.value{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
 
 .button{
     padding: 10px;
@@ -47,28 +56,37 @@ li{
     background-color: black;
     border:2px solid black; 
     color: #E8E8E8;
-margin: 10px 10px;
+    margin: 10px;
 }
 
 .button:hover{
-    color: black;
+    color: rgb(0, 0, 0);
     background-color: #E8E8E8;
     font-style: bold;
-box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3 , 0 0 80px #2196f3;
-	transition-delay: 0.2s;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3 , 0 0 80px #2196f3;
 }
 
 #bars{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: end;
     margin-top: 20px;
+    height: 390px;
+    width: 100%;
+    /* transform: rotate(180deg);
+    transform: scaleY(-1);
+    position: fixed; */
 }
 
 .barItem{
     background: cornsilk;
     /* background-color:cornflowerblue; */
-    display: flex-box;
     margin: 1px;
-    width: 0.62rem;
+    width: 8px;    
+}
+
+#timer{
+    text-align: center;
+    padding: 5px;
 }
