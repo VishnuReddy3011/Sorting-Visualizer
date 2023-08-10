@@ -41,7 +41,7 @@ const heapSort = async (arr,N)=>{
     }
 }
 
-let heapSortButton = document.querySelector("#heapSort");
+const heapSortButton = document.querySelector("#heapSort");
 heapSortButton.addEventListener("click" , async function(){
     let arr = document.querySelectorAll(".barItem");
     let len = arr.length;
