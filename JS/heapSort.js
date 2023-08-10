@@ -10,17 +10,18 @@ const heapify = async (arr,N,i)=>{
         largest = r;
     }
     if(largest != i){
-        arr[i].style.background = "lightseagreen";
-        arr[largest].style.background = "lightseagreen";
+        arr[i].style.background = "lightgreen";
+        arr[largest].style.background = "lightgreen";
         swap(arr[i],arr[largest]);
-        await wait(delay/2);
+        await wait(delay);
 
-        arr[i].style.background = "lightsalmon";
-        arr[largest].style.background = "lightsalmon";
-        await wait(delay/2);
+        arr[i].style.background = "lightpink";
+        arr[largest].style.background = "lightpink";
+        await wait(delay);
 
-        arr[i].style.background = "cornsilk";
-        arr[largest].style.background = "cornsilk";
+        
+        arr[i].style.background = "tomato";
+        arr[largest].style.background = "tomato";
         await heapify(arr, N, largest);
     }
 }
