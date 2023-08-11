@@ -67,6 +67,17 @@ li{
     margin: 10px;
 }
 
+.bg-yellow{
+    cursor: not-allowed;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: black;
+    border:2px solid black; 
+    color: #6c6c6c;
+    margin: 10px;
+}
+
+
 @media only screen and (min-width: 672px){
     .button:hover{
         color: rgb(0, 0, 0);
@@ -75,6 +86,9 @@ li{
         box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3 , 0 0 80px #2196f3;
     }
 }
+
+
+
 
 #bars{
     display: flex;
