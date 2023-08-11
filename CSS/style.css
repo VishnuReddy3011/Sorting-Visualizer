@@ -95,9 +95,9 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: end;
-    margin-top: 12px;
-    height: 390px;
+    height: 400px;
     width: 100%;
+    margin-top: -20px;
     /* transform: rotate(180deg);
     transform: scaleY(-1);
     position: fixed; */
@@ -113,7 +113,8 @@ li{
 #timer{
     text-align: center;
     padding: 3px;
-    margin-top: 1px;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 
@@ -124,7 +125,6 @@ li{
         height: 100vh;
         width: 94vw;
         margin: auto;
-        margin-top: 2vh;
         border-radius: 3%;
     }
     h1{
@@ -163,12 +163,13 @@ li{
     }
 
     #bars{
-        margin-top: 30px;
+        margin-top: 0px;
         transform: scale(0.9);
     }
 
     #timer{
+        margin-top: 0;
         padding: 7px;
-        font-size: 18px;
+        font-size: 30px;
     }
 } 
