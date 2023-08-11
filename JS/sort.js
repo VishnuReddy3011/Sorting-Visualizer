@@ -1,6 +1,6 @@
 const swap = (a,b) => [a.style.height, b.style.height] = [b.style.height, a.style.height];
 
-const buttonIds = ["#newArray","#size_input","#bubbleSort","#mergeSort","#quickSort","#heapSort"];
+const buttonIds = ["#newArray","#size_input","#bubbleSort","#mergeSort","#quickSort","#heapSort","#selectionSort","#insertionSort"];
 
 const ButtonsOn = () =>{
     const boxes = document.querySelectorAll('.btns');
