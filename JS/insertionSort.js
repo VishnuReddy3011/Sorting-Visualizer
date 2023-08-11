@@ -20,7 +20,7 @@ const insertionSort = async ()=>{
         if(j !== i-1){
             arr[j+1].style.height = minVal;
         }
-        arr[i].style.background = "-webkit-linear-gradient(rgba(238,174,202,1) 34%, rgba(148,187,233,1) 84%)";
+        arr[i-1].style.background = "-webkit-linear-gradient(rgba(238,174,202,1) 34%, rgba(148,187,233,1) 84%)";
     }
     arr[len-1].style.background = "-webkit-linear-gradient(rgba(238,174,202,1) 34%, rgba(148,187,233,1) 84%)";
 }
